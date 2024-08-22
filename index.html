@@ -3,17 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>World clock</title>
   </head>
   <body>
+    <div class="container">
+      <h1>World Clock</h1>
+
+      <select id="city">
+        <option value="">Select a city...</option>
+        <option value="current">My Location</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Pacific/Auckland">Auckland</option>
+      </select>
+      <div class="city" id="johannesburg">
+        <h2>Johannesburg 🇿🇦</h2>
+        <div class="date">August 15th 2022</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+      <div class="city" id="sydney">
+        <h2>Sydney 🇦🇺</h2>
+        <div class="date">August 15th 2022</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+      <div class="city" id="london">
+        <h2>London 🇬🇧</h2>
+        <div class="date">August 15th 2022</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+      <div class="city" id="new-york">
+        <h2>New York 🇺🇸</h2>
+        <div class="date">August 15th 2022</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+    </div>
+
+    <div id="current-city" style="display: none">
+      <a href="#" id="back-to-cities">Back to All Cities</a>
+      <div class="city" id="current-location">
+        <h2>Current Location</h2>
+        <div class="date">August 15th 2022</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+    </div>
     <footer>
       <p>
         This project was coded by
-        <a href="https://github.com/Phindilereigns">Phindile Paris</a>, is
-        <a href="https://github.com/Phindilereigns/World-clock"
+        <a href="https://github.com/Phindilereigns" target="_blank"
+          >Phindile Paris</a
+        >, is
+        <a href="https://github.com/Phindilereigns/World-clock" target="_blank"
           >open-sourced on Github</a
         >
-        and hosted on <a href="https://ppworldclock.netlify.app/">Netlify</a>
+        and hosted on
+        <a href="https://ppworldclock.netlify.app/" target="_blank">Netlify</a>
       </p>
     </footer>
   </body>
