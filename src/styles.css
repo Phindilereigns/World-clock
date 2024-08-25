@@ -16,6 +16,7 @@ body {
   grid-template-rows: auto auto 1fr;
   border: 0.3rem solid #1a1a1a;
   border-radius: 2rem;
+  padding: 1rem;
 }
 
 .heading {
