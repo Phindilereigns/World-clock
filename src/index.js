@@ -6,10 +6,10 @@ function updateTimeDate() {
   ];
 
   cities.forEach((city) => {
-    const dateElement = document.querySelector(#${city.id}-date);
-    const timeElementHour = document.querySelector(#${city.id}-hour);
-    const timeElementMinute = document.querySelector(#${city.id}-minute);
-    const timeElementSecond = document.querySelector(#${city.id}-second);
+    const dateElement = document.querySelector(`#${city.id}-date`);
+    const timeElementHour = document.querySelector(`#${city.id}-hour`);
+    const timeElementMinute = document.querySelector(`#${city.id}-minute`);
+    const timeElementSecond = document.querySelector(`#${city.id}-second`);
 
     const now = moment.tz(city.timezone);
     dateElement.innerHTML = now.format("MMMM Do YYYY");
@@ -28,7 +28,7 @@ function updateCity(event) {
     const now = moment.tz(cityTimeZone);
 
     const cityContainer = document.querySelector("#city-container");
-    cityContainer.innerHTML = 
+    cityContainer.innerHTML = `
       <div class="city">
         <h2 class="city-name">${cityName}</h2>
         <p class="city-date">${now.format("MMMM Do YYYY")}</p>
@@ -54,7 +54,7 @@ function updateCity(event) {
         </div>
       </div>
       <a href="index.html">Back to All Cities</a>
-    ;
+    `;
   }
 }
 
