@@ -81,10 +81,10 @@ body {
   height: auto;
   background-color: #1a1a1a;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.7rem;
   position: relative;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   overflow: hidden;
   margin: 0.5rem;
 }
@@ -116,6 +116,10 @@ body {
     #2370f5
   );
   z-index: 1;
+}
+
+a {
+  color: #b91fdc;
 }
 
 .clock::after {
@@ -155,5 +159,5 @@ footer {
   text-align: center;
   margin-top: auto;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
