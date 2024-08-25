@@ -7,23 +7,18 @@
 body {
   background-color: #0d0d0d;
   font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
   
 }
 
 .container {
-  width: 80%;
   max-width: 600px;
   max-height: 800px;
-  display: grid;
+ margin: 60px auto;
   grid-template-rows: auto auto 1fr;
-  align-items: center;
+  align-items: start;
   border: 0.3rem solid #1a1a1a;
   border-radius: 2rem;
-  padding: 20px;
-  margin: 20px;
 }
 
 .heading {
@@ -160,7 +155,7 @@ body {
 
 footer {
   text-align: center;
-  margin-top: 1rem auto;
+  margin-top: auto;
   color: #fff;
   font-size: 1rem;
 }
